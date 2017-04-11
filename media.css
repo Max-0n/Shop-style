@@ -1,0 +1,44 @@
+@media screen and (max-width: 870px){
+    .menu_button{
+        display: block;
+        z-index: 2;
+    }
+    .menu_button.active{
+        background: #79c585;
+        color: white;
+    }
+	aside{
+        position: fixed;
+        left: -220px;
+        margin: auto;
+        z-index: 1;
+        background: rgba(40,40,40,0.7);
+        padding: 50px 10px 0;
+        height: calc(100% - 50px);
+        top: 0;
+    }
+    .list{
+        float: none;
+        margin: auto;
+    }
+
+    aside.active{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .list{
+        width: 430px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .list{
+        width: 100%;
+    }
+    .list .item{
+        width: 100%;
+        margin: auto auto 15px;
+    }
+}

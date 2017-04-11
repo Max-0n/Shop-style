@@ -1,0 +1,184 @@
+aside ul label::after,
+.menu_button,
+.sizes > a,
+aside
+{
+    transition: all 0.3s ease-in-out;
+}
+html{
+    margin: auto;
+    padding: 0;
+    font-size: 14px;
+    font-family: Tahoma;
+}
+body{
+    background: #eaeaea;
+}
+main{
+    width: 100%;
+    max-width: 855px;
+    margin: 45px auto;
+    overflow: auto;
+}
+.menu_button{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding: 5px;
+    background: white;
+    border-radius: 6px;
+}
+aside{
+    float: left;
+    margin-right: 15px;
+    width: 200px;
+}
+aside > *{
+    border-radius: 6px;
+    margin: auto auto 15px;
+    background: white;
+}
+aside ul{
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+aside ul label{
+    cursor: pointer;
+}
+aside ul label::after{
+    content: '>';
+    display: block;
+    float: right;
+}
+aside ul label.active::after,
+aside ul label:hover::after{
+    transform: rotate(90deg);
+}
+aside ul.inner{
+    display: none;
+    background: #848c8f;
+    color: white;
+    padding: 5px 0;
+}
+aside ul.inner li a{
+    display: block;
+    font-size: 100;
+    color: white;
+    font-size: 11px;
+    padding: 5px 17px 5px;
+    text-decoration: none;
+}
+aside ul.inner li a:hover{
+    background: #aaa;
+}
+aside label{
+    display: block;
+    letter-spacing: 2px;
+    font-size: 11px;
+    color: #444;
+    font-weight: bold;
+    padding: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eaeaea;
+}
+.colors,
+.sizes,
+.price_range{
+    text-align: center;
+    padding: 15px 5px;
+}
+.colors > a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    margin: 3px;
+}
+.sizes > a{
+    color: #444;
+    line-height: 25px;
+    text-decoration: none;
+    display: inline-block;
+    background: #efefef;
+    font-size: 10px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    margin: 3px;
+}
+.sizes > a.active,
+.sizes > a:hover{
+    color: white;
+    background: #7f8e91;
+}
+.slider-container{
+    padding: 40px 10px;
+}
+
+.list{
+    float: left;
+    width: 645px;
+    margin-left: -7.5px;
+}
+.list .item{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 260px;
+    background: white;
+    border-radius: 6px;
+    margin: auto 7.5px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.list .item.hidden{display: none;}
+.list .item img{
+    margin: 5px 20px;
+}
+.list .item label{
+    display: block;
+    width: calc(100% - 60px);
+    font-weight: bold;
+    padding: 0 30px;
+}
+.list .item span{
+    font-style: italic;
+    color: grey;
+    font-size: 10px;
+}
+.list .item .price{
+    padding: 5px;
+}
+.list .item .new{
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 20px;
+    background: #79c585;
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+.list .load_more{
+    cursor: pointer;
+    display: block;
+    border-radius: 6px;
+    width: calc(100% - 15px);
+    margin: auto 7.5px;
+    padding: 10px 0;
+    font-size: 12px;
+    border: none;
+    color: white;
+    background: #b8c6c7;
+}
+.list .load_more:hover{
+    background: #b1c1c1;
+}
